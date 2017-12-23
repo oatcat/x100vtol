@@ -20395,6 +20395,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND15" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND16" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND17" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="R1" library="rcl" deviceset="R-EU_" device="R0603" value="10k"/>
+<part name="R2" library="rcl" deviceset="R-EU_" device="R0603" value="10k"/>
+<part name="R10" library="rcl" deviceset="R-EU_" device="R0603" value="10k"/>
+<part name="R17" library="rcl" deviceset="R-EU_" device="R0603" value="10k"/>
 </parts>
 <sheets>
 <sheet>
@@ -21076,6 +21080,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="GND14" gate="1" x="149.86" y="12.7"/>
 <instance part="J5" gate="J$1" x="97.79" y="68.58"/>
 <instance part="J101" gate="G$1" x="30.48" y="30.48"/>
+<instance part="R1" gate="G$1" x="198.12" y="66.04"/>
+<instance part="R2" gate="G$1" x="243.84" y="66.04"/>
+<instance part="R10" gate="G$1" x="198.12" y="25.4"/>
+<instance part="R17" gate="G$1" x="243.84" y="25.4"/>
 </instances>
 <busses>
 </busses>
@@ -21481,29 +21489,57 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <net name="N$8" class="0">
 <segment>
 <pinref part="Q4" gate="NMOS" pin="G"/>
-<wire x1="198.12" y1="71.12" x2="193.04" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="71.12" x2="195.58" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="R23" gate="G$1" pin="2"/>
+<pinref part="R1" gate="G$1" pin="1"/>
+<wire x1="195.58" y1="71.12" x2="193.04" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="66.04" x2="190.5" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="66.04" x2="190.5" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="68.58" x2="195.58" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="68.58" x2="195.58" y2="71.12" width="0.1524" layer="91"/>
+<junction x="195.58" y="71.12"/>
 </segment>
 </net>
 <net name="N$12" class="0">
 <segment>
 <pinref part="Q1" gate="NMOS" pin="G"/>
-<wire x1="243.84" y1="71.12" x2="238.76" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="243.84" y1="71.12" x2="241.3" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="R21" gate="G$1" pin="2"/>
+<pinref part="R2" gate="G$1" pin="1"/>
+<wire x1="241.3" y1="71.12" x2="238.76" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="66.04" x2="236.22" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="236.22" y1="66.04" x2="236.22" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="236.22" y1="68.58" x2="241.3" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="68.58" x2="241.3" y2="71.12" width="0.1524" layer="91"/>
+<junction x="241.3" y="71.12"/>
 </segment>
 </net>
 <net name="N$15" class="0">
 <segment>
 <pinref part="Q3" gate="NMOS" pin="G"/>
-<wire x1="198.12" y1="30.48" x2="193.04" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="30.48" x2="195.58" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="R24" gate="G$1" pin="2"/>
+<pinref part="R10" gate="G$1" pin="1"/>
+<wire x1="195.58" y1="30.48" x2="193.04" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="25.4" x2="190.5" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="25.4" x2="190.5" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="27.94" x2="195.58" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="27.94" x2="195.58" y2="30.48" width="0.1524" layer="91"/>
+<junction x="195.58" y="30.48"/>
 </segment>
 </net>
 <net name="N$17" class="0">
 <segment>
 <pinref part="Q2" gate="NMOS" pin="G"/>
-<wire x1="238.76" y1="30.48" x2="243.84" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="30.48" x2="241.3" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="R22" gate="G$1" pin="2"/>
+<pinref part="R17" gate="G$1" pin="1"/>
+<wire x1="241.3" y1="30.48" x2="243.84" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="25.4" x2="236.22" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="236.22" y1="25.4" x2="236.22" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="236.22" y1="27.94" x2="241.3" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="27.94" x2="241.3" y2="30.48" width="0.1524" layer="91"/>
+<junction x="241.3" y="30.48"/>
 </segment>
 </net>
 <net name="AGND" class="0">
@@ -21513,12 +21549,20 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="269.24" y1="27.94" x2="259.08" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="259.08" y1="27.94" x2="259.08" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="Q2" gate="NMOS" pin="S"/>
-<wire x1="251.46" y1="27.94" x2="251.46" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="251.46" y1="27.94" x2="251.46" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="Q3" gate="NMOS" pin="S"/>
-<wire x1="205.74" y1="22.86" x2="205.74" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="251.46" y1="25.4" x2="251.46" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="22.86" x2="205.74" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="25.4" x2="205.74" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="205.74" y1="22.86" x2="251.46" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="259.08" y1="22.86" x2="251.46" y2="22.86" width="0.1524" layer="91"/>
 <junction x="251.46" y="22.86"/>
+<pinref part="R17" gate="G$1" pin="2"/>
+<wire x1="248.92" y1="25.4" x2="251.46" y2="25.4" width="0.1524" layer="91"/>
+<junction x="251.46" y="25.4"/>
+<pinref part="R10" gate="G$1" pin="2"/>
+<wire x1="203.2" y1="25.4" x2="205.74" y2="25.4" width="0.1524" layer="91"/>
+<junction x="205.74" y="25.4"/>
 </segment>
 <segment>
 <pinref part="G2" gate="G$1" pin="AGND"/>
@@ -21526,12 +21570,20 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="269.24" y1="68.58" x2="259.08" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="259.08" y1="68.58" x2="259.08" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="Q1" gate="NMOS" pin="S"/>
-<wire x1="251.46" y1="63.5" x2="251.46" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="251.46" y1="63.5" x2="251.46" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="Q4" gate="NMOS" pin="S"/>
-<wire x1="205.74" y1="63.5" x2="205.74" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="251.46" y1="66.04" x2="251.46" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="63.5" x2="205.74" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="66.04" x2="205.74" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="205.74" y1="63.5" x2="251.46" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="259.08" y1="63.5" x2="251.46" y2="63.5" width="0.1524" layer="91"/>
 <junction x="251.46" y="63.5"/>
+<pinref part="R1" gate="G$1" pin="2"/>
+<wire x1="203.2" y1="66.04" x2="205.74" y2="66.04" width="0.1524" layer="91"/>
+<junction x="205.74" y="66.04"/>
+<pinref part="R2" gate="G$1" pin="2"/>
+<wire x1="248.92" y1="66.04" x2="251.46" y2="66.04" width="0.1524" layer="91"/>
+<junction x="251.46" y="66.04"/>
 </segment>
 </net>
 <net name="N$21" class="0">
